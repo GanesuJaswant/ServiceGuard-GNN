@@ -1,0 +1,12 @@
+{
+    "num_nodes": 31,
+    "features_per_node": 4,
+    "features": [
+        "raw_duration",
+        "ratio_to_normal",
+        "rank_within_trace",
+        "latency_contribution"
+    ],
+    "num_classes": 32,
+    "best_accuracy": 0.7985
+}
