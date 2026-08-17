@@ -1,0 +1,130 @@
+{
+    "hotel-reservation": {
+        "num_nodes": 6,
+        "service_names": [
+            "0_frontend",
+            "1_search",
+            "2_geo",
+            "3_rate",
+            "4_profile",
+            "5_locale"
+        ],
+        "num_classes": 7,
+        "feature_names": [
+            "raw",
+            "ratio",
+            "rank",
+            "contribution"
+        ],
+        "graph_type": "fully_connected",
+        "hidden_channels": 32,
+        "attention_heads": 4
+    },
+    "media-service": {
+        "num_nodes": 19,
+        "service_names": [
+            "0_nginx_compose-review",
+            "1_uniqueid",
+            "7_composereview_uniqueid",
+            "4_userreview_uniqueid",
+            "10_movie_review_uniqueid",
+            "13_reviewstorage_uniqueid",
+            "16_redis_uniqueid",
+            "2_rating",
+            "8_composereview_rating",
+            "5_userreview_rating",
+            "11_movie_review_rating",
+            "14_reviewstorage_rating",
+            "17_redis_rating",
+            "3_movieid",
+            "9_composereview_movieid",
+            "6_userreview_movieid",
+            "12_movie_review_movieid",
+            "15_reviewstorage_movieid",
+            "18_redis_movieid"
+        ],
+        "num_classes": 20,
+        "feature_names": [
+            "raw",
+            "ratio",
+            "rank",
+            "contribution"
+        ],
+        "graph_type": "fully_connected",
+        "hidden_channels": 64,
+        "attention_heads": 8
+    },
+    "social-network": {
+        "num_nodes": 31,
+        "service_names": [
+            "1_nginx_compose-post",
+            "2_mediaservice_upload",
+            "6_composepost_uploadmedia",
+            "3_userservice_upload",
+            "7_composepost_uploadcreator",
+            "4_textservice_upload",
+            "8_urlservice_upload",
+            "9_usermentionservice_upload",
+            "10_composepost_uploadtext",
+            "12_composepost_uploadurl",
+            "13_composepost_uploadusermention",
+            "5_uniqueid_upload",
+            "11_composepost_uploaduniqueid",
+            "14_poststorage_storepost_media",
+            "15_usertimeline_write_media",
+            "16_redishashset_update_media",
+            "17_poststorage_storepost_text",
+            "18_usertimeline_write_text",
+            "19_redishashset_update_text",
+            "20_poststorage_storepost_url",
+            "21_usertimeline_write_url",
+            "22_redishashset_update_url",
+            "23_poststorage_storepost_user",
+            "24_usertimeline_write_user",
+            "25_redishashset_update_user",
+            "26_poststorage_storepost_uniqueid",
+            "27_usertimeline_write_uniqueid",
+            "28_redishashset_update_uniqueid",
+            "29_poststorage_storepost_mention",
+            "30_usertimeline_write_mention",
+            "31_redishashset_update_mention"
+        ],
+        "num_classes": 32,
+        "feature_names": [
+            "raw",
+            "ratio",
+            "rank",
+            "contribution"
+        ],
+        "graph_type": "fully_connected",
+        "hidden_channels": 32,
+        "attention_heads": 4
+    },
+    "ticket-booking": {
+        "num_nodes": 12,
+        "service_names": [
+            "0_gateway",
+            "1_ticket_reserve",
+            "2_ticket_explore",
+            "3_security",
+            "4_ticket_info",
+            "5_order",
+            "6_basic_info",
+            "7_config",
+            "8_station",
+            "9_train",
+            "10_contact",
+            "11_price"
+        ],
+        "num_classes": 13,
+        "feature_names": [
+            "raw",
+            "ratio",
+            "rank",
+            "contribution"
+        ],
+        "graph_type": "fully_connected",
+        "hidden_channels": 32,
+        "attention_heads": 4
+    }
+}
