@@ -1,0 +1,7 @@
+streamlit
+torch
+torch-geometric
+pandas
+numpy
+scikit-learn
+joblib
